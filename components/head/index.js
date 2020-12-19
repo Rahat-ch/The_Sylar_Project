@@ -2,14 +2,14 @@ import React from 'react'
 import NextHead from 'next/head'
 import { string } from 'prop-types'
 
-const defaultDescription = ''
+const defaultDescription = 'Find the closest mental health resources in your Area. The Sylar Project provides you with a database of mental health programms accross the US and more'
 const defaultOGURL = ''
-const defaultOGImage = ''
+const defaultOGImage = 'https://images.unsplash.com/photo-1492681290082-e932832941e6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1651&q=80'
 
 const Head = props => (
   <NextHead>
     <meta charSet="UTF-8" />
-    <title>{props.title || ''}</title>
+    <title>{props.title || 'The Sylar Project'}</title>
     <meta
       name="description"
       content={props.description || defaultDescription}
