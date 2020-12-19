@@ -2,8 +2,6 @@
 
 Production Link 👉 https://example-frontend-next-js.sanity-io.now.sh
 
-This is an example [Sanity](https://www.sanity.io/) powered frontend for the movie dataset using [Next.js](https://github.com/zeit/next.js/).
-
 ## Prerequisites
 
 You will need [Node.js](https://nodejs.org) version 8.0 or greater installed on your system.
