@@ -1,0 +1,7 @@
+spec:
+ name: The Sylar Project
+ services:
+ - name: web
+   git:
+     branch: main
+     repo_clone_url: https://github.com/Rahat-ch/The_Sylar_Project.git
