@@ -1,6 +1,6 @@
 # The Sylar Project
 
-Production Link 👉 https://example-frontend-next-js.sanity-io.now.sh
+Production Link 👉  https://the-sylar-project-6avzk.ondigitalocean.app/
 
 ## Prerequisites
 
