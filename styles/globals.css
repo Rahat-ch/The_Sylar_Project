@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body {
-  background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
+    background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
 }

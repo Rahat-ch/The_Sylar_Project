@@ -16,7 +16,10 @@ const ResourceCard = ({ resource }) => {
                 </div>
                 <p className="text-sm text-gray-700 mt-4">{description}</p>
                 <div className="flex items-center justify-between mt-7 top-auto">
-                    <date>Posted:{posted}</date>
+                    <date>
+                        Posted:
+                        {posted}
+                    </date>
                     <a href={link} className=" bg-blue-600 text-gray-200 px-2 py-2 rounded-md ">
                         Go to this Resource
                     </a>
