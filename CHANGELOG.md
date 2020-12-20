@@ -15,7 +15,7 @@ All notable changes to this project will be documented in this file.
 
 ### Fixed
 
--No Changes intiialized
+-No Changes initialized
 
 ## [0.0.2] - 2020-12-19
 
@@ -41,8 +41,8 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
--No Changes intiialized
+-No Changes initialized
 
 ### Fixed
 
--No Changes intiialized
+-No Changes initialized
