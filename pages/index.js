@@ -5,16 +5,14 @@ import Head from '../components/head';
 import { ApiProvider } from '../contexts/ApiContext';
 import { DropdownProvider } from '../contexts/DropdownContext';
 
-const Home = () => {
-    return (
-        <ApiProvider>
-            <Head />
-            <Header />
-            <DropdownProvider>
-                <ResourceList />
-            </DropdownProvider>
-        </ApiProvider>
-    );
-};
+const Home = () => (
+    <ApiProvider>
+        <Head />
+        <Header />
+        <DropdownProvider>
+            <ResourceList />
+        </DropdownProvider>
+    </ApiProvider>
+);
 
 export default Home;

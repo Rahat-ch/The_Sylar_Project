@@ -17,14 +17,18 @@ module.exports = {
         amd: true, // Enables require() and define() as global variables as per the amd spec.
         node: true // Enables Node.js global variables and Node.js scoping.
     },
+    parser: 'babel-eslint',
     extends: [
-        'eslint:recommended',
+        // 'eslint:recommended',
         'plugin:react/recommended',
         'plugin:react-hooks/recommended',
         'plugin:jsx-a11y/recommended',
-        // 'airbnb',
-        'plugin:prettier/recommended' // Make this the last element so prettier config overrides other formatting rules
+        'airbnb',
+        'prettier',
+        'prettier/react'
+        // 'plugin:prettier/recommended' // Make this the last element so prettier config overrides other formatting rules
     ],
+    plugins: ['react', 'prettier'],
     rules: {
         'react/react-in-jsx-scope': 'off',
         'react/prop-types': 'off',
