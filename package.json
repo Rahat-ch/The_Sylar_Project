@@ -1,7 +1,7 @@
 {
     "name": "the_sylar_project",
     "author": "Rahat Chowdhury",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "scripts": {
         "dev": "next",
         "build": "next build",

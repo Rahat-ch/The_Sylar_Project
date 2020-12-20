@@ -1,8 +1,23 @@
 # Change Log
 
 All notable changes to this project will be documented in this file.
+## [0.0.3] - 2020-12-20
 
-## [0.0.2] - 20202-12-19
+### Added
+
+-   Initial set up of eslint, prettier, and airbnb config
+-   Added ignore files for node_modules
+-   Added scripts "npm run lint" and "npm run format" to use cli linting and formatting
+
+### Changed
+
+-No Significant changes
+
+### Fixed
+
+-No Changes intiialized
+
+## [0.0.2] - 2020-12-19
 
 ### Added
 
@@ -17,7 +32,7 @@ All notable changes to this project will be documented in this file.
 
 -Mobile responsive issues
 
-## [0.0.1] - 20202-12-18
+## [0.0.1] - 2020-12-18
 
 ### Added
 
