@@ -4,7 +4,7 @@ const ResourceCard = ({ resource }) => {
   if (!resource) return null
   const { description, image, link, name, posted } = resource
   return (
-    <div className="md:flex shadow-lg  mx-6 md:mx-auto my-40 max-w-lg md:max-w-2xl h-64 mt-4">
+    <div className="md:flex shadow-lg  mx-6 md:mx-auto my-40 max-w-lg md:max-w-2xl h-min mt-4">
       <img className="h-full w-full md:w-1/3  object-cover rounded-lg rounded-r-none pb-5/6" src={image} alt="bag" />
       <div className="w-full md:w-2/3 px-4 py-4 bg-white rounded-lg">
         <div className="flex items-center">
