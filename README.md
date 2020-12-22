@@ -38,7 +38,7 @@ Create a branch with your work. Your branch should be named using your initials 
 rc/addApiResources
 ```
 
-Open a pull request to the main branch and once reviewed if no changes are needed your code will be merged in!
+Open a pull request to the develop branch and once reviewed if no changes are needed your code will be merged in!
 
 ## Custom Sylar Project for your Local Community
 
