@@ -32,7 +32,7 @@ The app should now be up and running at http://localhost:3000 🚀
 
 ## Contributing
 
-Create a branch with your work. Your branch should be named using your initials and the feature you worked on. For example if I added more mental health resources to the API I would name my branch like this:
+Create a branch with your work. Make sure your branch is up to date with the develop branch on this repo! Your branch should be named using your initials and the feature you worked on. For example if I added more mental health resources to the API I would name my branch like this:
 
 ```
 rc/addApiResources
