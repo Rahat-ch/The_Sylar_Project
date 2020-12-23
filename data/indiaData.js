@@ -1,4 +1,4 @@
-export const indiaData = {
+const indiaData = {
     Bengaluru: [
         {
             name: 'Kaha Mind',
@@ -10,3 +10,5 @@ export const indiaData = {
         }
     ]
 };
+
+export default indiaData;

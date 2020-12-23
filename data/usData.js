@@ -1,4 +1,4 @@
-export const usData = {
+const usData = {
     Alabama: [
         {
             name: 'Alabama Mental Health',
@@ -543,3 +543,5 @@ export const usData = {
         }
     ]
 };
+
+export default usData;
