@@ -12,7 +12,9 @@ const ResourceList = () => {
         <>
             <Dropdown setLocation={setLocation} dropDownData={dropDownData} />
             {resources &&
-                resources.map((resource) => <ResourceCard key={resource} resource={resource} />)}
+                resources.map((resource) => (
+                    <ResourceCard key={resource.name} resource={resource} />
+                ))}
         </>
     )
 }
