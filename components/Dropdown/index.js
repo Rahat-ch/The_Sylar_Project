@@ -19,7 +19,7 @@ const Dropdown = ({ dropDownData, setLocation }) => (
                         />
                     </svg>
                     <select
-                        onBlur={(e) => setLocation(e.target.value)}
+                        onChange={(e) => setLocation(e.target.value)}
                         className="border border-gray-300 rounded-full text-gray-600 h-10 pl-5 pr-10 bg-white hover:border-gray-400 focus:outline-none appearance-none"
                     >
                         {dropDownData.map((choice) => (
