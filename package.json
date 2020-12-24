@@ -47,7 +47,7 @@
     "lint-staged": {
         "*.js": [
             "eslint --fix",
-            "npm run test:staged"
+            "npm run test"
         ]
     }
 }
