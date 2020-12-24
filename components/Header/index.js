@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const Header = () => (
     <section className="py-12 px-4 text-center pb-0">
@@ -13,7 +13,7 @@ const Header = () => (
             <div>
                 <p className="text-black-400 text-xl leading-relaxed mt-10">
                     The Syler Project aims to be a resource for locating local mental health
-                    resources no matter where you live. It's important that any and all existing
+                    resources no matter where you live. It is important that any and all existing
                     mental health resources are easy to find and as accesible as possible. This is
                     an open source project that is in need of contributers.{' '}
                     <a className="underline" href="https://github.com/Rahat-ch/The_Sylar_Project">
@@ -25,6 +25,6 @@ const Header = () => (
             </div>
         </div>
     </section>
-);
+)
 
-export default Header;
+export default Header

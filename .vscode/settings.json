@@ -1,0 +1,13 @@
+{
+    "editor.formatOnSave": false,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "prettier.eslintIntegration": true,
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    },
+    "[javascript]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    }
+}

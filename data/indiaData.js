@@ -1,4 +1,4 @@
-export const indiaData = {
+const indiaData = {
     Bengaluru: [
         {
             name: 'Kaha Mind',
@@ -6,7 +6,9 @@ export const indiaData = {
             description:
                 'We believe that taking care of your mental health and wellness needs should be effortless.',
             image: 'https://pbs.twimg.com/profile_images/1010105334344478720/GwO-JUuH_400x400.jpg',
-            posted: 'December 20, 2020'
-        }
-    ]
-};
+            posted: 'December 20, 2020',
+        },
+    ],
+}
+
+export default indiaData
