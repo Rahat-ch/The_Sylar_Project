@@ -1,8 +1,9 @@
-import React, { useContext } from 'react';
+import React from 'react'
+import Proptypes from 'prop-types'
 
 const ResourceCard = ({ resource }) => {
-    if (!resource) return null;
-    const { description, image, link, name, posted } = resource;
+    if (!resource) return null
+    const { description, image, link, name, posted } = resource
     return (
         <div className="md:flex shadow-lg  mx-6 md:mx-auto my-40 max-w-lg md:max-w-2xl h-min mt-4">
             <img
@@ -16,14 +17,24 @@ const ResourceCard = ({ resource }) => {
                 </div>
                 <p className="text-sm text-gray-700 mt-4">{description}</p>
                 <div className="flex items-center justify-between mt-7 top-auto">
-                    <date>Posted:{posted}</date>
+                    <p>Posted:{posted}</p>
                     <a href={link} className=" bg-blue-600 text-gray-200 px-2 py-2 rounded-md ">
                         Go to this Resource
                     </a>
                 </div>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default ResourceCard;
+ResourceCard.propTypes = {
+    resource: Proptypes.shape({
+        description: Proptypes.string,
+        image: Proptypes.string,
+        link: Proptypes.string,
+        name: Proptypes.string,
+        posted: Proptypes.string,
+    }).isRequired,
+}
+
+export default ResourceCard
