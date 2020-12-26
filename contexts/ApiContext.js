@@ -6,9 +6,11 @@ export const ApiContext = createContext(null)
 export function ApiProvider({ children }) {
     const [data, setData] = useState({})
     useEffect(() => {
-        fetch('/api/usResources')
+        fetch('/api/getResources')
             .then((response) => response.json())
-            .then((payload) => setData(payload))
+            .then((payload) => {
+                setData(payload)
+            })
     }, [])
-    return <ApiContext.Provider value={data}>{children}</ApiContext.Provider>
+    return <ApiContext.Provider value={{ data }}>{children}</ApiContext.Provider>
 }

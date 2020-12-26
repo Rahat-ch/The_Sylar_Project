@@ -7,7 +7,7 @@ import { DropdownContext } from '../../contexts/DropdownContext'
 const ResourceList = () => {
     const { location, setLocation, dropDownData } = useContext(DropdownContext)
     const resourceProps = useContext(ApiContext)
-    const resources = resourceProps[location]
+    const resources = resourceProps.data[location]
     return (
         <>
             <Dropdown setLocation={setLocation} dropDownData={dropDownData} />
