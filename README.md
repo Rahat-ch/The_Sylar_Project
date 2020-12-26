@@ -8,15 +8,9 @@ You will need [Node.js](https://nodejs.org) version 8.0 or greater installed on 
 
 ## Setup
 
-Get the code by either cloning this repository using git
+Make a fork of this repository and make sure that your code is up to date with the develop branch not main. Main is what is in production however you will be making a pull request to the develop branch make sure to keep things up to date there.
 
-```
-git clone https://github.com/Rahat-ch/The_Sylar_Project
-```
-
-... or [downloading source code](https://github.com/Rahat-ch/The_Sylar_Project/archive/main.zip) code as a zip archive.
-
-Once downloaded, open the terminal in the project directory, and install dependencies with:
+Once you clone your fork, open the terminal in the project directory, and install dependencies with:
 
 ```
 npm install
