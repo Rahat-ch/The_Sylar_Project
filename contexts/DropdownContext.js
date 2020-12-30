@@ -6,8 +6,8 @@ export const DropdownContext = createContext(null)
 /* eslint react/prop-types: 0 */
 export function DropdownProvider({ children }) {
     const apiData = useContext(ApiContext)
-    const dropDownData = ['Choose a Location', ...Object.keys(apiData)]
-    const [location, setLocation] = useState(dropDownData[0])
+    const dropDownData = [...Object.keys(apiData)]
+    const [location, setLocation] = useState('Choose a Location')
     return (
         <DropdownContext.Provider value={{ dropDownData, location, setLocation }}>
             {children}

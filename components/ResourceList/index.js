@@ -5,12 +5,15 @@ import { ApiContext } from '../../contexts/ApiContext'
 import { DropdownContext } from '../../contexts/DropdownContext'
 
 const ResourceList = () => {
-    const { location, setLocation, dropDownData } = useContext(DropdownContext)
+    const { location } = useContext(DropdownContext)
     const resourceProps = useContext(ApiContext)
     const resources = resourceProps[location]
+    console.log({ resources })
+    console.log({ resourceProps })
+    console.log({ location })
     return (
         <>
-            <Dropdown setLocation={setLocation} dropDownData={dropDownData} />
+            {/* <Dropdown setLocation={setLocation} dropDownData={dropDownData} /> */}
             {resources &&
                 resources.map((resource) => (
                     <ResourceCard key={resource.name} resource={resource} />

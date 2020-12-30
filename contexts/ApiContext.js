@@ -10,5 +10,6 @@ export function ApiProvider({ children }) {
             .then((response) => response.json())
             .then((payload) => setData(payload))
     }, [])
+    console.log({data})
     return <ApiContext.Provider value={data}>{children}</ApiContext.Provider>
 }
