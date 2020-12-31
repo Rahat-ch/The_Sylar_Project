@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.0.5] - 2020-12-25
+
+### Added
+
+-   Serverless function set up with Airtable
+-   Route for getting all resources set
+-   Flexibility to switch between Airtable backend and JSON backend for local dev in case no access to Airtable
+-   Additional California resources added thanks to JordanLong1
+
+### Changed
+
+-   No significant changes
+
+### Fixed
+
+- Linting errors fixed
+## [0.0.3] - 2020-12-20
+
 ## [0.0.4] - 2020-12-23
 
 ### Added

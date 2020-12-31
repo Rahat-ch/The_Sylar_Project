@@ -1,7 +1,7 @@
 {
     "name": "the_sylar_project",
     "author": "Rahat Chowdhury",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "scripts": {
         "dev": "next",
         "build": "next build",
@@ -13,7 +13,9 @@
     },
     "dependencies": {
         "@tailwindcss/forms": "^0.2.1",
+        "airtable": "^0.10.1",
         "autoprefixer": "^10.1.0",
+        "jest": "^26.6.3",
         "next": "^10.0.4-canary.8",
         "postcss": "^8.2.1",
         "prop-types": "^15.7.2",
