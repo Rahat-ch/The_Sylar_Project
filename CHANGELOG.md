@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.0] - 2021-01-02
+
+### Added
+
+- Unit test update thanks to Jeff Shapiro
+- Rehaul of UI thanks to Tailwind UI
+- Added new favicon
+- Added ability for visitors to submit new resources
+
+### Changed
+
+-   Issues with initial unit tests which are removed will need to open new issue for test.
+
+### Fixed
+
+- No Major fixes
 ## [0.0.5] - 2020-12-25
 
 ### Added
