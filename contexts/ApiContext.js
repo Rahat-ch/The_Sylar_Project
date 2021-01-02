@@ -12,6 +12,5 @@ export function ApiProvider({ children }) {
                 setData(payload)
             })
     }, [])
-    console.log({data})
     return <ApiContext.Provider value={data}>{children}</ApiContext.Provider>
 }

@@ -9,7 +9,7 @@ const Layout = ({ children }) => (
                         <div className="flex-shrink-0">
                             <img
                                 className="h-8 w-8"
-                                src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                                src="https://i.ibb.co/027B51g/icon1.png"
                                 alt="Workflow"
                             />
                         </div>

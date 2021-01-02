@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import Proptypes from 'prop-types'
 import { DropdownContext } from '../../contexts/DropdownContext'
 
 const Item = ({ isVisible, setIsVisible, itemRef }) => {
@@ -11,7 +12,7 @@ const Item = ({ isVisible, setIsVisible, itemRef }) => {
     return (
         <div
             ref={itemRef}
-            className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5"
+            className="z-10 origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5"
         >
             <div
                 className="py-1"
@@ -33,6 +34,12 @@ const Item = ({ isVisible, setIsVisible, itemRef }) => {
             </div>
         </div>
     )
+}
+
+Item.propTypes = {
+    isVisible: Proptypes.bool.isRequired,
+    setIsVisible: Proptypes.func.isRequired,
+    itemRef: Proptypes.func.isRequired,
 }
 
 export default Item
