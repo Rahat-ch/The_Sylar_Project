@@ -5,11 +5,19 @@ export const DropdownContext = createContext(null)
 
 /* eslint react/prop-types: 0 */
 export function DropdownProvider({ children }) {
-    const { data } = useContext(ApiContext)
-    const dropDownData = [' Choose a Location', ...Object.keys(data)].sort()
-    const [location, setLocation] = useState(dropDownData[0])
+    const apiData = useContext(ApiContext)
+    const dropDownData = [...Object.keys(apiData)].sort()
+    const [location, setLocation] = useState('Choose a Location')
+    const createResourceData = dropDownData.map((state) => {
+        return {
+            name: state,
+            id: apiData[state][0].stateId[0],
+        }
+    })
     return (
-        <DropdownContext.Provider value={{ dropDownData, location, setLocation }}>
+        <DropdownContext.Provider
+            value={{ dropDownData, location, setLocation, createResourceData }}
+        >
             {children}
         </DropdownContext.Provider>
     )
