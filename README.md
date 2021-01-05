@@ -1,6 +1,6 @@
 # The Sylar Project
 
-Production Link 👉 https://the-sylar-project-6avzk.ondigitalocean.app/
+Production Link 👉 https://www.sylarproject.com/
 
 ## Prerequisites
 
