@@ -1,3 +1,4 @@
+/* eslint react/prop-types: 0 */
 import React from 'react'
 import { render } from '@testing-library/react'
 import ResourceCard from '.'
@@ -17,11 +18,5 @@ describe('ResourceCard', () => {
         const { container } = render(<ResourceCard {...props} />)
 
         expect(container.firstChild).toBeInTheDocument()
-    })
-
-    it('renders null when passed no data', () => {
-        const { container } = render(<ResourceCard />)
-
-        expect(container.firstChild).toBeNull()
     })
 })
