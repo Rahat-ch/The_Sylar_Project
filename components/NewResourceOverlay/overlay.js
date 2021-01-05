@@ -3,7 +3,7 @@ import Form from './form'
 
 const Overlay = ({ setIsOverlayVisible }) => {
     return (
-        <div className="z-50 fixed inset-0 overflow-hidden">
+        <div className="overlay z-50 fixed inset-0 overflow-hidden">
             <div className="absolute inset-0 overflow-hidden">
                 <section
                     className="absolute inset-y-0 right-0 pl-10 max-w-full flex"
@@ -25,7 +25,7 @@ const Overlay = ({ setIsOverlayVisible }) => {
                                 <div className="flex items-start justify-between">
                                     <h2
                                         id="slide-over-heading"
-                                        className="text-lg font-medium text-gray-900"
+                                        className="heading text-lg font-medium text-gray-900"
                                     >
                                         Add a new resource
                                     </h2>
