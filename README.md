@@ -4,7 +4,7 @@ Production Link 👉 https://the-sylar-project-6avzk.ondigitalocean.app/
 
 ## Prerequisites
 
-You will need [Node.js](https://nodejs.org) version 8.0 or greater installed on your system.
+You will need [Node.js](https://nodejs.org) version 11.0 or greater installed on your system.
 
 ## Setup
 
@@ -23,6 +23,11 @@ npm run dev
 ```
 
 The app should now be up and running at http://localhost:3000 🚀
+
+Note: If you do not have an API key for the Airtable Database, please uncomment the code in 
+```
+pages/api/getResources
+```
 
 ## Contributing
 
