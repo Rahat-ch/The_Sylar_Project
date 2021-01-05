@@ -1,14 +1,13 @@
 /* eslint-disable */
-import React, { useReducer, useContext, useState } from 'react'
+import React, { useReducer, useContext } from 'react'
 import formReducer, { initialState } from '../../utils/formReducer'
 import submitResource from '../../utils/submitResource'
 import { DropdownContext } from '../../contexts/DropdownContext'
-import Confirmation from './confirmation'
+import { ModalContext } from '../../contexts/ModalContext'
 
 const Form = ({ setIsOverlayVisible }) => {
-    const [isConfirmationVisible, setIsConfirmationVisible] = useState(false)
-    const [statusMessage, setStatusMessage] = useState('')
     const { dropDownData, createResourceData } = useContext(DropdownContext)
+    const {setIsModalVisible, setResponseMessage} = useContext(ModalContext)
     const startingState = initialState(createResourceData[0])
     const [state, dispatch] = useReducer(formReducer, startingState)
     const handleChange = (name, e) => {
@@ -18,9 +17,11 @@ const Form = ({ setIsOverlayVisible }) => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         const tableResponse = await submitResource(state)
-        if (tableResponse.status === '200') alert(tableResponse.msg)
-        setStatusMessage(tableResponse.msg)
+        if (tableResponse.status === '200'){
+        setResponseMessage(tableResponse.msg)
+        setIsModalVisible(true)
         setIsOverlayVisible(false)
+        }
     }
     const handleRegionChange = (e) => {
         const value = createResourceData.find((region) => region.name === e.target.value).id
@@ -28,8 +29,6 @@ const Form = ({ setIsOverlayVisible }) => {
         dispatch({ type: 'SET_INPUT', name, value })
     }
     return (
-        <>
-            {isConfirmationVisible && <Confirmation />}
             <form onSubmit={(e) => handleSubmit(e)} className="space-y-8 divide-y divide-gray-200">
                 <div className="space-y-8 divide-y divide-gray-200 sm:space-y-5">
                     <div className="pt-1 space-y-6 sm:space-y-5">
@@ -137,7 +136,6 @@ const Form = ({ setIsOverlayVisible }) => {
                     </div>
                 </div>
             </form>
-        </>
     )
 }
 
