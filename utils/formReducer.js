@@ -13,7 +13,7 @@ const formReducer = (state, action) => {
 export const initialState = (region) => {
     return {
         name: null,
-        stateId: region.id,
+        stateId: region === undefined ? null : region.id,
         link: null,
         image: null,
     }

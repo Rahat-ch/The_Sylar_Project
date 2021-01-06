@@ -28,7 +28,11 @@ beforeEach(() => {
     cy.request({
         url: '/',
     }).then((response) => {
-        expect(response.status).eq(200)
+        expect(response.status).to.equal(200)
     })
     cy.visit('/')
 })
+
+// afterEach(() => {
+//     cy.clearCookies()
+// })
