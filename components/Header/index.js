@@ -20,7 +20,7 @@ const Header = () => {
 
                     <div className="sm:flex">
                         <div>
-                            <p className="mt-2 mb-2 text-xl">
+                            <p className="mt-2 mb-2 text-xl text-gray-900 dark:text-gray-100">
                                 The Sylar Project is a curated list of mental health resources
                                 organized by location. Our mission is to make it was easy as
                                 possible for you to find your local mental health resources so you
@@ -31,7 +31,7 @@ const Header = () => {
                     <Alert />
                     <div className="md:flex md:items-center md:justify-between">
                         <div className="flex-1 min-w-0">
-                            <h2 className="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate pt-10">
+                            <h2 className="text-2xl font-bold leading-7 text-gray-900 dark:text-gray-100 sm:text-3xl sm:truncate pt-10">
                                 {location}
                             </h2>
                         </div>
