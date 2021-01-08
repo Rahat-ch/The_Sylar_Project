@@ -1,0 +1,7 @@
+export const OPEN_PANEL_OVERLAY = 'open-panel'
+export const CLOSE_PANEL_OVERLAY = 'close-panel'
+export const OVERLAY = 'overlay'
+export const NAME = 'name'
+export const STATE_ID = 'state'
+export const LINK = 'link'
+export const IMAGE = 'image'
