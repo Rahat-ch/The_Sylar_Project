@@ -3,6 +3,16 @@ import React, { useReducer, useContext } from 'react'
 import formReducer, { initialState } from '../../utils/formReducer'
 import submitResource from '../../utils/submitResource'
 import { DropdownContext } from '../../contexts/DropdownContext'
+
+import Confirmation from './confirmation'
+import {
+    NAME,
+    LINK,
+    STATE_ID,
+    IMAGE,
+    CLOSE_PANEL_OVERLAY,
+} from '../../utils/constants/cypressClassNames.js'
+
 import { ModalContext } from '../../contexts/ModalContext'
 
 const Form = ({ setIsOverlayVisible }) => {
@@ -53,7 +63,7 @@ const Form = ({ setIsOverlayVisible }) => {
                                         type="text"
                                         name="name"
                                         id="name"
-                                        className="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
+                                        className={`${NAME} max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md`}
                                     />
                                 </div>
                             </div>
@@ -70,7 +80,7 @@ const Form = ({ setIsOverlayVisible }) => {
                                         onChange={(e) => handleRegionChange(e)}
                                         id="stateId"
                                         name="stateId"
-                                        className="max-w-lg block focus:ring-indigo-500 focus:border-indigo-500 w-full shadow-sm sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
+                                        className={`${STATE_ID} max-w-lg block focus:ring-indigo-500 focus:border-indigo-500 w-full shadow-sm sm:max-w-xs sm:text-sm border-gray-300 rounded-md`}
                                     >
                                         {dropDownData.map((region) => (
                                             <option key={region}>{region}</option>
@@ -92,7 +102,7 @@ const Form = ({ setIsOverlayVisible }) => {
                                         type="text"
                                         name="link"
                                         id="link"
-                                        className="block max-w-lg w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
+                                        className={`${LINK} block max-w-lg w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md`}
                                     />
                                 </div>
                             </div>
@@ -110,7 +120,7 @@ const Form = ({ setIsOverlayVisible }) => {
                                         type="text"
                                         name="image"
                                         id="image"
-                                        className="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
+                                        className={`${IMAGE} max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md`}
                                     />
                                 </div>
                             </div>
@@ -122,7 +132,7 @@ const Form = ({ setIsOverlayVisible }) => {
                     <div className="flex justify-end">
                         <button
                             type="button"
-                            className="bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                            className={`${CLOSE_PANEL_OVERLAY} bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500`}
                             onClick={() => setIsOverlayVisible(false)}
                         >
                             Cancel

@@ -5,7 +5,8 @@
         "plugin:react-hooks/recommended",
         "plugin:jsx-a11y/recommended",
         "plugin:prettier/recommended",
-        "prettier/prettier"
+        "prettier/prettier",
+        "plugin:cypress/recommended"
     ],
     "plugins": [
         "react",
