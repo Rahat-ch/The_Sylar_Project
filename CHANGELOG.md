@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.1] - 2021-01-05
+
+### Added
+
+Alert Component from Tailwind UI for better UX
+
+### Changed
+
+-   Unit test removed for null props in Resource Card
+
+### Fixed
+
+- No Major fixes
 ## [1.0.0] - 2021-01-02
 
 ### Added

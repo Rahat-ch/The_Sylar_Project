@@ -1,22 +1,16 @@
 # The Sylar Project
 
-Production Link 👉 https://the-sylar-project-6avzk.ondigitalocean.app/
+Production Link 👉 https://www.sylarproject.com/
 
 ## Prerequisites
 
-You will need [Node.js](https://nodejs.org) version 8.0 or greater installed on your system.
+You will need [Node.js](https://nodejs.org) version 11.0 or greater installed on your system.
 
 ## Setup
 
-Get the code by either cloning this repository using git
+Make a fork of this repository and make sure that your code is up to date with the develop branch not main. Main is what is in production however you will be making a pull request to the develop branch make sure to keep things up to date there.
 
-```
-git clone https://github.com/Rahat-ch/The_Sylar_Project
-```
-
-... or [downloading source code](https://github.com/Rahat-ch/The_Sylar_Project/archive/main.zip) code as a zip archive.
-
-Once downloaded, open the terminal in the project directory, and install dependencies with:
+Once you clone your fork, open the terminal in the project directory, and install dependencies with:
 
 ```
 npm install
@@ -29,6 +23,11 @@ npm run dev
 ```
 
 The app should now be up and running at http://localhost:3000 🚀
+
+Note: If you do not have an API key for the Airtable Database, please uncomment the code in 
+```
+pages/api/getResources
+```
 
 ## Contributing
 
