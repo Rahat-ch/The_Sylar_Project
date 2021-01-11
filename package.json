@@ -20,6 +20,7 @@
         "next": "^10.0.4-canary.8",
         "postcss": "^8.2.1",
         "prop-types": "^15.7.2",
+        "qs": "^6.9.4",
         "react": "^17.0.1",
         "react-dom": "^17.0.1",
         "tailwindcss": "^2.0.2",
