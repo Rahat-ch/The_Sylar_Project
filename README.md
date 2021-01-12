@@ -24,10 +24,13 @@ npm run dev
 
 The app should now be up and running at http://localhost:3000 🚀
 
-Note: If you do not have an API key for the Airtable Database, please uncomment the code in 
+Note: If you do not have an API key for the Airtable Database, please uncomment the code in these locations:
 ```
 pages/api/getResources
+contexts/DropdownContext
 ```
+
+
 
 ## Contributing
 
