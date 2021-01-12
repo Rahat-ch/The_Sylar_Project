@@ -11,6 +11,8 @@ export function DropdownProvider({ children }) {
     const createResourceData = dropDownData.map((state) => {
         return {
             name: state,
+            // id: apiData[state][0].stateId,
+            // for local development, uncomment the code above, and comment out the code below
             id: apiData[state][0].stateId[0],
         }
     })
